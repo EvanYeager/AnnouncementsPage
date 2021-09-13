@@ -1,0 +1,19 @@
+
+app-announcement {
+   margin-top: 60px;
+   padding-top: 60px;
+}
+
+nav > a {
+   float: right;
+   margin: 5px 20px;
+}
+
+nav > a:first-child {
+   float: left;
+}
+
+main {
+   margin: auto;
+   width: 60%;
+}

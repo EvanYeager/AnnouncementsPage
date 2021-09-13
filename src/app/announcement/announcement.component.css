@@ -1,0 +1,8 @@
+#container {
+   background-color: lightgray;
+   height: 200px;
+}
+
+p, h2 {
+   text-align: center;
+}
