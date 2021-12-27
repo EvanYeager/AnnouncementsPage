@@ -1,6 +1,12 @@
 #container {
    background-color: lightgray;
-   height: 200px;
+   min-height: 150px;
+   max-height: 400px;
+   overflow: auto;
+   margin: 50px;
+   padding: 10px 20px;
+   font-size: 17px;
+   line-height: 1.3em;
 }
 
 p, h2 {

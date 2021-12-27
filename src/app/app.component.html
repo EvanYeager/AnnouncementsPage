@@ -15,8 +15,7 @@
   </header>
 
   <main>
-    <app-announcement>
-    </app-announcement>
+    <app-announcement *ngFor="let announcement of getAnnouncements()" [title] = "announcement.title" [text] = "announcement.text"></app-announcement>
   </main>
 </body>
 </html>

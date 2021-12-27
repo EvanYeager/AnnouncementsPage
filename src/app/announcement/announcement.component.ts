@@ -5,15 +5,13 @@ import { Component, Inject, Input, OnInit } from '@angular/core';
   templateUrl: './announcement.component.html',
   styleUrls: ['./announcement.component.css']
 })
-export class AnnouncementComponent implements OnInit {
+export class AnnouncementComponent {
   @Input()
-  title: string = 'title';
+  title: string = '';
+  id: number = 0;
   @Input()
-  text: string = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem id nihil sed assumenda accusantium nulla libero similique quis, est aliquid dolores dignissimos! Ullam dolorem qui recusandae, aspernatur odit architecto fuga.';
+  text: string = '';
 
-  constructor(title: String, text: String) { }
-
-  ngOnInit(): void {
-  }
+  constructor() { }
 
 }

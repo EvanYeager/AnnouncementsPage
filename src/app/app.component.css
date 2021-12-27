@@ -1,7 +1,16 @@
 
-app-announcement {
+/* app-announcement {
    margin-top: 60px;
    padding-top: 60px;
+} */
+
+body {
+   font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+   height: 20px;
+   margin-bottom: 20px;
 }
 
 nav > a {
@@ -15,5 +24,7 @@ nav > a:first-child {
 
 main {
    margin: auto;
-   width: 60%;
+   max-width: 1400px;
+   /* width: 60%; */
+   
 }

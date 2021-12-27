@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { AnnouncementComponent } from './announcement/announcement.component';
+import { HttpRequestService } from './Services/http-request.service';
 
 @Component({
   selector: 'app-root',
@@ -7,16 +9,18 @@ import { AnnouncementComponent } from './announcement/announcement.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'AnnouncementsPage';
 
-  announcements: AnnouncementComponent[] = [
-    new AnnouncementComponent('title', 'text'),
-    new AnnouncementComponent('Another title', 'more text'),
-    new AnnouncementComponent('Why hello there', 'this is yet more text woohoo')
-  ];
+  constructor(private http: HttpClient) {
+    
+  }
+
+  public getAnnouncements() : AnnouncementComponent[]
+  {
+    let requestService = new HttpRequestService(this.http);
+    return requestService.getAnnouncements();
+  }
 
   ngOnInit() {
-    // this.announcements.forEach(ann => render)
-    this.announcements[0].title
+    
   }
 }
